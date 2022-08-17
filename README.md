@@ -5,7 +5,7 @@ Este projeto foi inicializado com <a href="https://vitejs.dev/guide/">Vite.</a>
 O frontend foi hospedado na: <a href="https://vercel.com/">Vercel.</a>
 
 Você pode acessar o app logo ao lado &#x1F603;:
-<a href="#">NFTs.</a>
+<a href="https://nfts-eskj7g2y1-mateusfelixdias.vercel.app/">NFTs.</a>
 
 # Caso você queira o projeto em seu ambiente de desenvolvimento.
 <h2>npm i</h2>
