@@ -1,3 +1,4 @@
+import astronautAvatars from "../assets/astronautAvatars.png"
 import avatars from "../assets/avatarsAgrupado.png";
 import badge from "../assets/badge.png";
 import mask from "../assets/metaMaskLogo.png";
@@ -17,7 +18,7 @@ export function Header() {
             </div>
 
 
-            <div className="bg-white flex items-center justify-around rounded h-[30px] w-[160px] hover:bg-red-500 transition-colors">
+            <div className="bg-white flex items-center justify-around rounded h-[30px] w-[140px] hover:bg-red-500 transition-colors">
                 <img 
                     alt="Imagem meta mask."
                     className="w-4 h-4" 
@@ -65,6 +66,12 @@ export function Header() {
                 </div>
             </div>
         </div>
+
+        <img 
+            className="w-full p-6"
+            alt="imagem astronaut avatars." 
+            src={astronautAvatars} 
+        />
     </div>
   );
 };
