@@ -6,7 +6,7 @@ import mask from "../assets/metaMaskLogo.png";
 
 export function Header() {
   return (
-    <div className="bg-blackLine h-full w-full">
+    <div className="bg-gray-900 h-full w-full">
         <div className="flex justify-between p-6">
             <strong className="text-zinc-200 text-2xl">
                 <span className="text-red-600">NFTs</span>
