@@ -9,12 +9,12 @@ export function Header() {
     <div className="bg-blackLine h-full w-full">
         <div className="flex justify-between p-6">
             <strong className="text-zinc-200 text-2xl">
-                Rocket <span className="text-red-600">NFTs</span>
+                <span className="text-red-600">NFTs</span>
             </strong>
 
 
             <div className="flex text-zinc-200 text-xs p-2">
-                <span>Compar NFT</span>
+                <span>Comprar NFT</span>
             </div>
 
 

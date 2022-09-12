@@ -1,10 +1,42 @@
 import { AstronautIcon } from "../components/AstronautIcon";
+import { Artists } from "./Artists";
 import artistaOne from "../assets/artistaOne.png";
+import artistaTwo from "../assets/artistaTwo.png";
+import artistaThree from "../assets/artistaThree.png";
+import artistaFour from "../assets/artistaFour.png";
 import astronautaOne from "../assets/astronautaOne.png";
 import astronautaTwo from "../assets/astronautaTwo.png";
 import astronautaThree from "../assets/astronautaThree.png";
 import astronautaFour from "../assets/astronautaFour.png";
 import banner from "../assets/banner.png";
+
+const artistsFeminine = [
+  {
+    artist: artistaTwo,
+    name: "Joana",
+    fotografias: 60,
+  },
+  {
+    artist: artistaFour,
+    name: "ana",
+    fotografias: 40,
+  }
+];
+
+const artists = [
+  {
+    artist: artistaThree,
+    name: "bruno",
+    fotografias: 70,
+  },
+
+  {
+    artist: artistaOne,
+    name: "Mateus",
+    fotografias: 80,
+  },
+];
+
 
 const dataForTheAstronaut = [
   {
@@ -18,6 +50,7 @@ const dataForTheAstronaut = [
     RKT: "2.0 RKT",
   },
 ];
+
 
 const dataForTheAstronautFeminine = [
   {
@@ -119,20 +152,33 @@ export function Main() {
           <strong className="text-2xl text-zinc-200">
             Melhores  <span className="text-red-500">Artistas</span>
           </strong>
+        </div>
 
-          <div className="bg-[#252525] border border-zinc-700 rounded h-[90px] w-[210px]">
-            <div className="flex justify-between p-4">
-              <img
-                alt="Primerio artista."
-                className="h-14 w-14"
-                src={artistaOne}
-              />
+        <div className="flex justify-between">
+          <div>
+            {artists.map(({ artist, fotografias, name }, key) => {
+              return ( 
+                <Artists 
+                  key={key}
+                  artist={artist}
+                  fotografias={fotografias}
+                  name={name}
+                />
+              )
+            })}
+          </div>
 
-              <div className="pt-3">
-                <p className="text-zinc-200 text-sm">Mateus</p>
-                <span className="text-red-500 text-sm">80 Fotografias.</span>
-              </div>
-            </div>
+          <div>
+            {artistsFeminine.map(({ artist, fotografias, name }, key) => {
+              return ( 
+                <Artists 
+                  key={key}
+                  artist={artist}
+                  fotografias={fotografias}
+                  name={name}
+                />
+              )
+            })}
           </div>
         </div>
     </div>
