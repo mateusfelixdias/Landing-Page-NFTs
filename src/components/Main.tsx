@@ -4,11 +4,33 @@ import artistaOne from "../assets/artistaOne.png";
 import artistaTwo from "../assets/artistaTwo.png";
 import artistaThree from "../assets/artistaThree.png";
 import artistaFour from "../assets/artistaFour.png";
+import artistaFive from '../assets/artistaFive.png';
+import artistaSix from "../assets/artistaSix.png";
 import astronautaOne from "../assets/astronautaOne.png";
 import astronautaTwo from "../assets/astronautaTwo.png";
 import astronautaThree from "../assets/astronautaThree.png";
 import astronautaFour from "../assets/astronautaFour.png";
 import banner from "../assets/banner.png";
+
+const artists = [
+  {
+    artist: artistaOne,
+    name: "Mateus",
+    fotografias: 80,
+  },
+
+  {
+    artist: artistaThree,
+    name: "Bruno",
+    fotografias: 70,
+  },
+
+  {
+    artist: artistaSix,
+    name: "Breno",
+    fotografias: 50
+  }
+];
 
 const artistsFeminine = [
   {
@@ -18,23 +40,15 @@ const artistsFeminine = [
   },
   {
     artist: artistaFour,
-    name: "ana",
+    name: "Ana",
     fotografias: 40,
+  },
+
+  {
+    artist: artistaFive,
+    name: "Brena",
+    fotografias: 30,
   }
-];
-
-const artists = [
-  {
-    artist: artistaThree,
-    name: "bruno",
-    fotografias: 70,
-  },
-
-  {
-    artist: artistaOne,
-    name: "Mateus",
-    fotografias: 80,
-  },
 ];
 
 
@@ -154,8 +168,8 @@ export function Main() {
           </strong>
         </div>
 
-        <div className="flex justify-between">
-          <div>
+        <div className="flex flex-col">
+          <div className="flex justify-between">
             {artists.map(({ artist, fotografias, name }, key) => {
               return ( 
                 <Artists 
@@ -168,7 +182,7 @@ export function Main() {
             })}
           </div>
 
-          <div>
+          <div className="flex justify-between">
             {artistsFeminine.map(({ artist, fotografias, name }, key) => {
               return ( 
                 <Artists 
