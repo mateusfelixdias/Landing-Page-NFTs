@@ -1,5 +1,5 @@
 export interface IArtist {
   artist: string;
-  fotografias: number;
+  photographs: number;
   name: string;
 }
