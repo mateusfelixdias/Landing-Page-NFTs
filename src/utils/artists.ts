@@ -9,19 +9,19 @@ export const artists = [
   {
     artist: artistaOne,
     name: 'Mateus',
-    fotografias: 80,
+    photographs: 80,
   },
 
   {
     artist: artistaThree,
     name: 'Bruno',
-    fotografias: 70,
+    photographs: 70,
   },
 
   {
     artist: artistaSix,
     name: 'Breno',
-    fotografias: 50,
+    photographs: 50,
   },
 ];
 
@@ -29,17 +29,17 @@ export const artistsFeminine = [
   {
     artist: artistaTwo,
     name: 'Joana',
-    fotografias: 60,
+    photographs: 60,
   },
   {
     artist: artistaFour,
     name: 'Ana',
-    fotografias: 40,
+    photographs: 40,
   },
 
   {
     artist: artistaFive,
     name: 'Brena',
-    fotografias: 30,
+    photographs: 30,
   },
 ];
