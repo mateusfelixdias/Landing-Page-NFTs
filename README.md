@@ -31,7 +31,7 @@ Após executar o comando yarn run dev, você pode acessar o site na sua porta lo
 Uma demostração do site!
 <br><br>
 
-<img aling="center" src="NFTs./public/NFTs.png" alt="image da página NFTs.">
+<img aling="center" src="./public/NFTs.png" alt="image da página NFTs.">
 <br><br>
 
 ## 🛠️ Tecnologias utilizadas.
