@@ -63,16 +63,16 @@ export function Footer() {
         </div>
       </div>
 
-      <div className='border-t border-zinc-600 w-full h-40 justify-around flex pt-8'>
-        <a href='#' className='text-[#5A5757]'>
+      <div className='border-t border-zinc-600 w-full h-40 justify-between flex pt-5'>
+        <a href='#' className='text-[#5A5757] pl-8'>
           NFTs.com.br
         </a>
 
-        <div className='flex justify-between w-[40%]'>
-          <img className='h-10 w-10' src={instagram} alt='Instagram' />
-          <img className='h-10 w-10' src={youTube} alt='Youtube' />
-          <img className='h-10 w-10' src={twitter} alt='Twitter' />
-          <img className='h-10 w-10' src={email} alt='E-mail' />
+        <div className='flex justify-between pr-8 w-[30%]'>
+          <img className='h-7 w-7' src={instagram} alt='Instagram' />
+          <img className='h-7 w-7' src={youTube} alt='Youtube' />
+          <img className='h-7 w-7' src={twitter} alt='Twitter' />
+          <img className='h-7 w-7' src={email} alt='E-mail' />
         </div>
       </div>
     </div>
